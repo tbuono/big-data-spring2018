@@ -1,2 +1,2 @@
-msg = "Python is printing me!"
+msg = "Metaphysics is #science."
 print(msg)
