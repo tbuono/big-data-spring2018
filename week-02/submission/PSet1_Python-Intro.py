@@ -49,7 +49,7 @@ sentence_words
 ## sorted(__) does not modify __; it merely sorts __
 sentence_words = ['I', 'am', 'learning', 'Python', 'to', 'munge', 'large', 'datasets', 'and', 'visualize', 'them']
 test = sorted(sentence_words)
-print(sentence_words)
+print(test)
 
 #B5. Extra Credit: Modify the sort to do a case [case-insensitive alphabetical sort](http://matthiaseisen.com/pp/patterns/p0005/).
 sentence_words.sort()
@@ -103,14 +103,6 @@ print(response)
 
 # Write a function that evaluates the strength of a password. Ask the user to input a password that meets the criteria listed below. You can either use the Python [`input`](https://docs.python.org/3/library/functions.html#input) built-in function, or just pass the password as a function argument. Validate that the user’s password matches this criteria. If password is valid, print a helpful success message.
 
-# Test that the user's password...
-#
-# + is 8-14 characters long
-# + includes at least 2 digits (i.e., numbers)
-# + includes at least 1 uppercase letter
-# + includes at least 1 special character from this set: `['!', '?', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '+', '=']`
-
-
 def passcheck():
     pw = (input("Input a STRONG password... i.e. 1) 8-14 characters long; 2) includes at least 2 digits/numbers; 3) includes at least 1 uppercase letter; 3) includes at least 1 special character from this set: `['!', '?', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '+', '=']`"))
     length_pw = len(pw)
@@ -158,23 +150,40 @@ exp()
 
 Write your own versions of the Python built-in functions `min()` and `max()`. They should take a list as an argument and return the minimum or maximum element. Assume lists contain numeric items only.
 
+# min with three items in list, user input
+def minn(a, b, c):
+     list = [a, b, c]
+     list.sort()
+     return list [0]
+minn(4, 6, 3)
 
- def min():
+# min with a pre-determined list, a
+def minn():
+     a = [5,3,6,2,4]
+     a.sort()
+     return a [0]
+minn()
 
+#maximum, with a pre-determined list, b
+def maxx():
+    b = [ 4, 6, 3, 10, 400]
+    b.sort()
+    b.reverse()
+    return b [0]
+maxx()
 
-def someFunc(myList = [], *args)
-    for x in myList:
-        print x
-    ###
-l = [1,2,3]
-def stuff(a):
-   for x in a:
-      print a
-stuff(l)
+#trying to use the Hint, min application
+#close, but no cigar
+def min_new():
+    c = [3, 5, 9, 1]
+    #temp = c[0]
+    for i in range(len(c)):
+        temp = c[0]
+        if temp < c[1]:
+            temp = c[0]
+    return temp
+#print(temp)
+min_new()
 
-+ Inputs:
-  1. A `list` of `numbers` to be tested.
-+ Outputs:
-  1. A `number` of the list that is the maximum or minimum.
-
-Hint: Pick the first element as the minimum/maximum and then loop through the elements. Each time you find a smaller/larger element, update your minimum/maximum.
+# Inputs: A `list` of `numbers` to be tested. Outputs: A `number` of the list that is the maximum or minimum.
+# Hint: Pick the first element as the minimum/maximum and then loop through the elements. Each time you find a smaller/larger element, update your minimum/maximum.
