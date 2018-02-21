@@ -596,3 +596,68 @@ print(c)
 ## Fin.
 
 Okay, so that was a lot. Obviously, you should not expect all of this to stick immediately. Hopefully, though, the waters will begin to clear as you tackle the problem set for this week.
+
+
+
+PSET1 extra info
+
+#def test
+def for_sum(x, y):
+    for i in range(y):
+        x += i
+        return x
+
+#vectorization - idiom that allows you to add to lists more easily
+#allows you to add columns, rows together
+
+#define the test int_test
+def int_test(low_int = 0):
+    low_int = int(input("Give me one number"))
+    #test if the inputs are integers
+    if type(low_int) == int:
+        print ("Here are your numbers, sir: ", two_numbs)
+    else:
+        print("No actually, give me NUMBERS")
+
+
+        # python always thinks in objects
+        # each object has associated methods and functions
+        #methods are special cases of functions
+        # method = fun_list.sort() fun_list is passed to the method .sort()
+        #in-place method - takes the object and actually changes it
+
+        #Branching
+        flag = False
+        if flag:
+            x = 1
+            print ("Flag is true.")
+        else:
+            x = 2
+            print ("Flag is false.")
+
+            #INTERNET
+            def sumProblem(x, y):
+                sum = x + y
+                sentence = 'The sum of {} and {} is {}.'.format(x, y, sum)
+                print(sentence)
+
+            def main():
+                sumProblem(2, 3)
+                sumProblem(1234567890123, 535790269358)
+                a = int(input("Enter an integer: "))
+                b = int(input("Enter another integer: "))
+                sumProblem(a, b)
+
+            main()
+
+            def lastFirst(firstName, lastName):
+                separator = ', '
+                result = lastName + separator + firstName
+                return result
+
+                # if (pw.count("!", "?"))>=1:
+                  #     print("Yay!")
+                  # if pw.count("")
+                  # if (pw.count('!' or '?' or '@' or '#' or '$' or '%' or '^' or '&' or '*' or '(' or ')' or '-' or '_' or '+' or '=')) == 1:
+                      #print (pw.count('!' or '?' or '@' or'#' or '$' or '%' or '^' or '&' or '*' or '(' or ')' or '-' or '_' or '+' or '='))
+                      #print("Fail, password needs at least one special character.")
