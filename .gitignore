@@ -4,6 +4,9 @@ week-04/**/twitter_keys.py
 **/__pycache__/*
 **/__pycache__/*
 week-04/*
+api_key = "qq7I1gRnyQDcNk6riLnKhH03P"
+api_secret = "62xLfP6jaTSGgDzUNVOOoQwNULAs22TZ6TIRAiZKepEhgwV1cC"
+
 week-05/*
 week-06/*
 week-09/*
